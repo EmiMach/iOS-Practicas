@@ -1,0 +1,20 @@
+//Nombres: Emily Alondra
+//Apellidos: Segovia Machado
+//Grupo: 6W
+
+void main() {
+//Salario de una persona que gana $213 por hora, el cual trabajo 8 horas por 7 días, al final hay que pagar el 16% de iva, mostrar un mensaje si la cantidad es menor a $5,000 diciendo que ha sido una buena semana, en caso contrario mandar que ha sido una mala semana
+
+  int salariohora = 213;
+  int horasdiarias = 8;
+  int dias = 7;
+  double iva = 0.16;
+  int salario = (salariohora * horasdiarias * dias);
+  double salarioiva = (salario * iva);
+  double salariototal = (salario - salarioiva);
+
+  String res = salariototal < 5000
+      ? "Ha sido una mala semana"
+      : "Ha sido una buena semana para ganar $salariototal";
+  print(res);
+}
